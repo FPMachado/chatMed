@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from flask_cors import CORS  # Importar o CORS
+from flask_cors import CORS
 import google.generativeai as genai
 
 app = Flask(__name__)
@@ -30,13 +30,24 @@ model = genai.GenerativeModel(
     safety_settings=safety_settings
 )
 
+# Inicializar histórico de conversa
+chat_history = []
+
 # Rota para processar mensagens do usuário
 @app.route("/chat", methods=["POST"])
 def chat():
+    global chat_history  # Utilize o histórico global da conversa
+
     user_message = request.json["message"]
 
-    # Gerar resposta usando o modelo gerativo
-    response = model.generate_content(user_message)
+    # Adicionar mensagem do usuário ao histórico
+    chat_history.append(user_message)
+
+    # Gerar resposta usando o modelo gerativo e histórico de conversa
+    response = model.generate_content(chat_history)
+
+    # Adicionar resposta ao histórico de conversa
+    chat_history.append(response.text)
 
     return jsonify({"response": response.text})
 
