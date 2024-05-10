@@ -28,7 +28,9 @@ function sendMessage() {
 function displayMessage(sender, message) {
     var chatBox = document.getElementById("chat-box");
     var messageElement = document.createElement("div");
-    messageElement.innerHTML = `<strong>${sender}:</strong> ${message}`;
+    messageElement.innerHTML = `
+        <strong>${sender}:</strong> ${marked(message)}
+    `;
     chatBox.appendChild(messageElement);
     chatBox.scrollTop = chatBox.scrollHeight; // Rolar para baixo automaticamente
 }

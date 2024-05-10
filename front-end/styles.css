@@ -9,7 +9,7 @@ body {
 }
 
 .chat-container {
-    width: 400px;
+    width: 800px;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -17,7 +17,7 @@ body {
 }
 
 .chat-box {
-    height: 300px;
+    height: 500px;
     overflow-y: scroll;
     padding: 10px;
     border: 1px solid #ddd;
@@ -25,7 +25,16 @@ body {
     margin-bottom: 10px;
 }
 
+.user-section{
+    display: flex;
+}
+
+.user-section button{
+    width: 130px;
+}
+
 input[type="text"], button {
+    width: 100%;
     padding: 10px;
     margin-right: 10px;
     border: 1px solid #ddd;
