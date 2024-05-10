@@ -1,19 +1,49 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background-color: #5F9EA0;
     margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5F9EA0;
+    padding: 10px 20px;
+    width: 100%; /* Ocupar toda a largura */
+    position: fixed; /* Fixar o navbar no topo */
+    top: 0; /* Posicionar no topo */
+    z-index: 1000; /* Garantir que fique acima de outros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Adicionar sombra */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 30px; 
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
 }
 
 .chat-container {
     width: 800px;
     background-color: #fff;
-    padding: 20px;
+    padding: 100px 20px 20px; 
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 120px auto 20px;
 }
 
 .chat-box {
@@ -25,18 +55,33 @@ body {
     margin-bottom: 10px;
 }
 
-.user-section{
+.user-section {
     display: flex;
+    align-items: center;
 }
 
-.user-section button{
-    width: 130px;
-}
-
-input[type="text"], button {
-    width: 100%;
+#user-input {
+    flex: 1;
+    height: 40px; 
     padding: 10px;
     margin-right: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
+    resize: none; 
+    height: 15px;
+}
+
+button {
+    width: 130px;
+    background-color: #5F9EA0;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #66CDAA;
+    transition: background-color 0.3s ease;
 }
