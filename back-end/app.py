@@ -6,7 +6,7 @@ app = Flask(__name__)
 CORS(app) 
 
 # Configurar a chave da API do Google
-GOOGLE_API_KEY = "AIzaSyC1aia4QkGZYq_EXoHpZ82FpDaLiq2ukI0"
+GOOGLE_API_KEY = "SUA CHAVE API"
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # Configurações para geração de conteúdo

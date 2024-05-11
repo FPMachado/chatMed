@@ -18,7 +18,7 @@ function sendMessage() {
     .then(response => response.json())
     .then(data => {
         // Exibir resposta do chatbot no chat
-        displayMessage("Med", data.response);
+        displayMessage("Méd", data.response);
     })
     .catch(error => {
         console.error("Erro ao enviar mensagem:", error);
