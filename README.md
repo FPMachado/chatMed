@@ -34,8 +34,4 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir novas issues ou 
 
 ## Autor
 
-- Filipe Pires Machado - [@seuusername](https://github.com/FPMachado)
-
-## Licença
-
-Este projeto está licenciado sob a Licença MIT - consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
+- Filipe Pires Machado - [@filipepiresm](https://www.instagram.com/filipepiresm/)
