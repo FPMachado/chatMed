@@ -25,7 +25,7 @@ Este projeto consiste em um chatbot médico desenvolvido em Python utilizando Fl
 1. Clone o repositório para o seu ambiente local.
 2. Instale as dependências do Python utilizando `pip install -r requirements.txt`.
 3. Configure a chave de API do Google no arquivo `app.py`.
-4. Execute o servidor Flask com `python app.py`.
+4. Execute o servidor Flask com `python app.py` dentro da pasta back-end.
 5. Acesse o aplicativo em `http://localhost:5000` no seu navegador.
 
 ## Contribuições
