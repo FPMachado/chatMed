@@ -34,7 +34,7 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir novas issues ou 
 
 ## Autor
 
-- Filipe Santos - [@seuusername](https://github.com/seuusername)
+- Filipe Pires Machado - [@seuusername](https://github.com/FPMachado)
 
 ## Licença
 
